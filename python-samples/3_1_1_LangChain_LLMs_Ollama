@@ -1,0 +1,5 @@
+from langchain_ollama.llms import OllamaLLM
+ 
+llm = OllamaLLM(model="gemma3:1b")
+result = llm.invoke("こんにちは。あなたは誰？")
+print(result)
